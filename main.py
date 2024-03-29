@@ -1,8 +1,9 @@
 import asyncio
 import logging
-import sys 
+import sys
 from handlers import cmd_start, echo_handler
 from loader import dp, bot
+
 
 async def main() -> None:
     dp.message.register(cmd_start)
